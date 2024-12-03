@@ -1,0 +1,254 @@
+header{
+    background-color: #eae6e5;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 60px;
+}
+
+.body{
+    background-color: #593640; 
+}
+.logo_text{
+    margin-top: -3%;
+    margin-left: 18%;
+}
+.logo{
+    height: auto ; 
+    width: 120px;
+    border-radius: 100px;
+}
+.main_header div, span {
+    margin: 6px;
+}
+.main_header{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.search{
+    height: 40px;
+    width: 80%;
+}
+
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    
+    }
+    
+.div1 { grid-area: 1 / 1 / 3 / 2; }
+.div2 { grid-area: 1 / 5 / 5 / 6; }
+.div3 { grid-area: 1 / 2 / 4 / 5; }
+.div4 { grid-area: 1 / 2 / 2 / 3; }
+.div5 { grid-area: 1 / 3 / 2 / 4; }
+.div6 { grid-area: 1 / 4 / 2 / 5; }
+.div7 { grid-area: 2 / 2 / 3 / 3; }
+.div8 { grid-area: 2 / 3 / 3 / 4; }
+.div9 { grid-area: 2 / 4 / 3 / 5; }
+.div10 { grid-area: 3 / 2 / 4 / 3; }
+.div11 { grid-area: 3 / 3 / 4 / 4; }
+.div12 { grid-area: 3 / 4 / 4 / 5; }
+   
+.parent2 {
+    background-color: #ADD982;
+    display: grid;
+    justify-content:space-around;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    
+}
+    
+.div13 { grid-area: 5 / 1 / 6 / 2; margin: auto auto;}
+.div14 { grid-area: 5 / 3 / 6 / 4; margin: auto auto; }
+.div15 { grid-area: 5  / 4 / 6 / 5; margin: auto auto; } 
+
+
+
+
+.navbar-nav .dropdown-menu {
+    background-color: #222; 
+    border: none;          
+    width: 100%;
+}
+    
+
+li {
+    width: 100%;
+    display: block;
+     
+}
+
+.navbar-nav .dropdown-menu > li > a {
+    color: #9d9d9d;         
+}
+
+.navbar-nav > li > a {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.book_cont img {
+    max-width: 50%;
+    height: auto;
+    padding: 2%;
+    
+
+}
+.book_cont{
+    background-color:#F2AB6D;
+    transition:  background-color 0.7s ease;
+    border-radius: 6px;
+    margin: 2% ;
+    
+    
+}
+.desc{
+    float: right;
+    margin-right: 4%;
+    margin-top: 20%;
+    font-size: 14px;
+}
+
+    
+.cost {
+    font-weight: bold;
+    margin: auto 40%;
+    font-size: 22px;
+}
+.name{
+    margin: auto ;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 20px;
+    font-family: "Alegreya", serif;
+
+}
+    
+
+
+
+@media (max-width: 768px) {
+    .parent {
+        display: grid !important;
+        grid-template-columns: 1fr !important; /* В одну колонку */
+        grid-template-rows: auto !important;
+        gap: 15px !important;
+    }
+    
+    .parent > div {
+        grid-column: 1 / -1 !important; /* Каждый элемент занимает всю ширину */
+    }
+
+    .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11, .div12 {
+        grid-area: auto !important; /* Сброс предыдущих правил */
+    }
+    .div2{
+        position: sticky;
+        top: 20px;
+    }
+    footer{
+        height: 20px;
+    }
+    img{
+        width: 35%;
+        padding: 10px;
+        margin-top: 3%;
+    }
+    .login img{
+        width: 100%;
+    }
+    #description{
+        font-size: 14px;
+
+    }
+    #description.active{
+        font-size: 14px;
+
+    }
+    .info.active{
+        font-size: 14px;
+    }
+    .info{
+        font-size: 14px;
+    }
+    
+    
+}
+
+
+.book_cont:hover{
+    
+    background-color: #ce8f58;
+    text-shadow: 1px 1px 2px wheat, 0 0 1em wheat, 0 0 0.2em wheat;    
+}
+        
+
+
+        .login{
+    width: 320px;
+    background-color:  #f8f8f8;
+    margin: 200px auto;
+    padding: 10px;
+    border: 1px solid blue;
+}
+
+.login input{
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box; /*не вылазяй пж*/
+    margin: 5px auto;
+    
+}
+
+
+
+.butt{
+    background-color: #ADD982;
+    color: #000;
+    padding: 10px;
+}
+.butt:hover{
+    background-color: #878C5D;
+}
+
+
+
+.info {
+    background-color: #878C5D; 
+    color: #F2F0F0; 
+    margin: auto 3%; 
+    border-radius: 6px;
+    overflow: hidden; /* Скрывает содержимое за пределами контейнера */
+    transition: max-height 0.5s ease; /* Плавное изменение высоты */
+    max-height: 0; /* Изначально скрыто */
+    font-size: 20px;
+}
+
+.info.active {
+    max-height: 2000px; /* Ограничение максимальной высоты для плавного перехода */
+}
+
+
+
+
+
+       
+#description {
+    opacity: 0; /* Изначально невидимый */
+    transition: opacity 1s ease; /* Плавный переход прозрачности */
+    padding: 10px; 
+}
+
+#description.active {
+    opacity: 1; 
+}
